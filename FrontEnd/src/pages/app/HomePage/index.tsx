@@ -10,8 +10,10 @@ function HomePage() {
   };
   return (
     <>
-      <h1>Welcome to the Applications</h1>
-      <StyledButton onClick={handleLogout}>Logout</StyledButton>
+      <div style={{ display: "flex", flexDirection: "column", margin: "auto" }}>
+        <h1>Welcome to the Application</h1>
+        <StyledButton onClick={handleLogout}>Logout</StyledButton>
+      </div>
     </>
   );
 }

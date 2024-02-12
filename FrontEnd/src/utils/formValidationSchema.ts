@@ -10,7 +10,7 @@ export const loginFormValidationSchema = Yup.object({
 export const registerFormValidationSchema = Yup.object({
   fullName: Yup.string()
     .required("Full Name is required")
-    .min(3, "Full Name should have at least"),
+    .min(3, "Full Name should have at least 3 letters"),
   email: Yup.string()
     .required("Email field is required")
     .email("Email should be in a valid format"),
